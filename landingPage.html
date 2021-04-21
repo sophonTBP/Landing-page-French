@@ -49,7 +49,7 @@
                         <path fill="currentColor"
                             d="m56 61v-36.29l-24-16.293-24 16.293v10.673c1.434 0 2.706.859 3.244 2.189 2.492 6.162 3.756 10.344 3.756 12.428 0 4.17-2.519 7.393-6 7.917v-2.027c2.282-.507 4-2.746 4-5.89 0-2.344-2.131-8.02-3.611-11.679-.506-1.251-2.273-1.251-2.779 0-1.479 3.659-3.61 9.335-3.61 11.679 0 3.145 1.718 5.383 4 5.89v5.11h-5v2h60v-2zm-14-13 2-3 2 3v3h4v-3l2-3 2 3v13h-4v-6h-4v6h-4v-6h-4v6h-4v-13l2-3 2 3v3h4zm-9-20h5v2c0 1.657-1.343 3-3 3h-2zm2-7c1.657 0 3 1.343 3 3v2h-5v-5zm-9 3c0-1.657 1.343-3 3-3h2v5h-5zm0 4h5v5h-2c-1.657 0-3-1.343-3-3zm2 14v19h-11v-19z" />
                         <path d="m32 6.417 26.877 18.238 2.246-3.311-29.123-19.761-29.123 19.761 2.246 3.311z" />
-                    </svg><span class="link-text">Home</span></a>
+                    </svg><span class="link-text">Video</span></a>
             </li>
 
             <li class="nav-item" id="UI">
@@ -179,7 +179,7 @@
                     </svg>
 
 
-                    <span class="link-text">Content</span>
+                    <span class="link-text">Contenu</span>
                 </a>
             </li>
             <li class="nav-item Contact">
@@ -297,15 +297,24 @@
 </header>
 
 <body class="body">
-    <section class="inTheBegining" id="iTB">
+    <section id="iTB" class="inTheBegining">
+<p class="iTB">Cette page est la continuation de l’exercice « Responsive Landing Page » du programme d'étude de "freeCodeCamp", il répond aux exigences de l’énoncé mais j’y ai ajouté un peu d’interactivité avec le bouton « Theme ».</p>
 
+
+        <p class="iTB">La barre de Navigation est résponsive*, sur les petits écrans au lieu d'un menu hamburger* le texte est remplacé par des icônes.</p> 
         <p class="iTB">
-            This project is part of the free-code-camp curriculum and is my attempt to go a little bit beyond the exercice requirements. The code is available on github (link) as well a links to various video tutorials I used to build it.</p> <p class="iTB">
-            The NavBar is responsive but doesn't use a hamburger menu, instead icons replace the text labels on lower screen resolutions. Every button as some kind of animation to indicate interactivity.  </p><p class="iTB">
-            The theme button lets the user chose between preselected colors(fireship link). Svgs allow a lot of customisation as they are viewed by the browser just like any other "div". One can easily* change the color of any sub element. Couple that with css variables, a few DOM selectors and a little bit of javascript magic and "voila!". You can find free Svgs on google, I found the ones I used on "Undraw". *you may need a tool like "inkscape" to edit the svg and rename the path or the group you want to change the color of. 
+            Le bouton thème permet de choisir parmi 3 thèmes aux couleurs prédéfini et pouvant être facilement modifiées dans le fichier Css. Le site respecte au mieu la séparation entre le contenu(html), la feuille de style (css) et le code (javascript). Les images Svg sont directement intégrés dans le fichier Html, ainsi le contenu est chargé en une seul fois. Au final la taille du site est minuscule : 180ko!</p>
+            <p class="iTB">Les images Svg peuvent être relativement facilement customisées (les navigateurs les considérant comme n'importe quel autre "élément") il est possible de changer la couleur de n'importe quelle sous partie en éditant le code y correspondant, la seule difficulté étant de repérer la portion de code du sous élément que l'on veut éditer, personnellement j'utilise Inkscape mais se sujet mérite son propre tutorial.
+            </p>
+            <p class="iTB">Les images utilisé pour se site proviennent de "Undraw". La barre de navigation est une version modifiée d'un tutoriel de la chaîne youtube "fireship", l'animation du bouton "envoyer" provient d'un tutoriel video de "kevin powel" lui aussi sur youtube.</p>
 
-        </p>
-        
+            <p class="iTB">*Responsif: capacité d'un site web ou d'un élément à changer sa largeur ou/et sa position en fonction du type d'écran utilisé pour le visonage</p>
+            <p class="iTB"><svg class="hMenu"viewBox="0 0 75 80" width="15" height="15">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>*menu Hamburger : bouton remplaçant la barre de navigation sur mobile  </p>  
+
     </section>
 
     <section id="webDesigner" class="top-section pseudo-shadow">
@@ -406,10 +415,7 @@
                     transform="translate(-77 -130.70818)" fill="#2f2e41" />
             </svg>
             </img>
-            <p class="art-text">Scalable Vector Graphics is an Extensible Markup Language-based vector image format for
-                two-dimensional graphics with support for interactivity and animation. The SVG specification is an open
-                standard developed by the World Wide Web Consortium since 1999. SVG images and their behaviors are
-                defined in XML text files</p>
+            <p class="art-text">« SVG » ou encore « Scalable Vector Graphics »  que l’on peut traduire par "vecteur graphique redimensionnable" est un format d’image facilitant l’animation et l’interactivité. La spécification SVG est un standard « ouvert » développé par le World Web consotium depuis 1999. Les images Svgs et leur comportements sont définies dans des fichiers textes XML.</p>
         </article>
         <section class="section vid-section">
 
@@ -426,9 +432,7 @@
 
                     </iframe>
                 </div>
-                <p class="video-text">Kurzgesagt is a German animation studio founded by Philipp Dettmer. The studio's
-                    YouTube channel focuses on minimalist animated educational content, using the flat design style. It
-                    discusses scientific, technological, political, philosophical and psychological subjects.</p>
+                <p class="video-text">Kurzgesagt est un studio d'animation allemand fondé par Philipp Dettmer. La chaîne YouTube du studio se concentre sur un contenu éducatif animé minimaliste, utilisant le style de design plat. Il aborde des sujets scientifiques, technologiques, politiques, philosophiques et psychologiques.</p>
             </div>
         </section>
     </section>
@@ -440,8 +444,9 @@
                 <div>
                     <h2 class="h2">Ui</h2>
                 </div>
-                <p>
-                    I build simple, robust, accessible and user friendly websites.</p>
+                <p>Ce tutoriels contient des astuces pour de sites robustes,
+                simples et accessible.
+                </p>
             </div>
             <svg class="middle-img" id="aacf679f-7774-484d-919c-70dbfadaa690" data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1114.24868 608.51147">
@@ -542,8 +547,7 @@
                     <h2 id="middle" class="h2">Ux</h2>
                 </div>
                 <p>
-                    This project offers dark mode and use the least bandwidth possible to save your battery and
-                    data-plan.</p>
+                    Ce projet propose un mode sombre et limite l’utilisation de la bande passante, économisant les batteries et les forfaits data.</p>
             </div>
             <svg class="middle-img" id="b06587d5-0dba-482d-8c16-9624be0edba5" data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -856,7 +860,7 @@
                     <h2 class="h2">Optimisation</h2>
                 </div>
                 <p>
-                    This page uses svgs instead of pngs so it can load faster on mobile devices while still looking Ok.</p>
+                    Cette page utilise des fichiers SVG plutôt que des images classiques afin d’optimiser les temps de chargement.</p>
             </div>
             <svg class="middle-img" id="e9543dae-de41-418f-9290-24abb7460ee9" data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg" height="25%" viewBox="0 0 1012 794">
@@ -1473,7 +1477,7 @@
 
 
             <article class="feedback-card">
-                <div class="feedback-header">Send me your Feedback:</div>
+                <div class="feedback-header">Me contacter:</div>
                 <form class="feedback-body " id="form" action="https://www.freecodecamp.com/email-submit">
 
                     <div class="text-container">
@@ -1482,13 +1486,13 @@
 
 
 
-                        <textarea class="feedback-body__message" placeholder="Any questions?" name="message"
+                        <textarea class="feedback-body__message" placeholder="votre message" name="message"
                             id="message" row="5"></textarea>
                     </div>
 
                     
                 </form>
-                <input class="submit button" id="submit" type="submit" value="SUBMIT">
+                <input class="submit button" id="submit" type="submit" value="ENVOYER">
                     </input>
             </article>
 
@@ -1501,7 +1505,7 @@
         <div class="footer">
             <ul>
                 <li>
-                    <p class="footer-text"> Find me on social medias:</p>
+                    <p class="footer-text"> Réseaux:</p>
                 </li>
                 <li>
                     <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="free-code-camp"
