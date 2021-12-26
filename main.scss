@@ -21,7 +21,16 @@ header{
 
 
 
-
+  
+    .inTheBegining{width: 55%;}
+    .iTB{
+        
+      width: 75%;}
+      
+  
+  
+  
+   
 
   
 body {
@@ -343,7 +352,7 @@ section{
     display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 72%;
+  width: 80%;
   margin: 0 auto;
   background-color: var(--bg-ternary);
   box-shadow: 0 .5rem 3rem -.25em rgba(0, 0, 0, .8);
@@ -351,13 +360,13 @@ section{
 .iTB{
     display: grid;
   width: 80%;
-  
-  margin: 2rem auto;
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+  margin: 0 auto;
   padding: 0.8rem;
   border-radius: 3px;
   background-color:var(--bg-secondary) ;
   .hMenu{ 
-      justify-self:right;
+      justify-self:left;
       padding-right: 3rem;
       
       
@@ -374,7 +383,7 @@ section{
   .inTheBegining{width: 85%;}
   .iTB{
       
-    width: 90%;}
+    width: 75%;}
     
 
 
@@ -442,6 +451,7 @@ section{
   background-color: var(--bg-secondary);
   padding: 0.5rem;
   border-radius: 3px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
  }
 
 .image {
@@ -491,6 +501,7 @@ section{
   background-color: var(--bg-secondary);
   padding: 0.5rem;
   border-radius: 3px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
 }
 
 
@@ -606,7 +617,7 @@ padding-bottom: 1rem;
       width: 73%;
       margin-bottom: 5rem;
       margin-top: 1rem;
-      font-size: clamp(1rem, 1vw, 2rem);
+      font-size: clamp(1rem, 1.3vw, 2rem);
       text-align: center;
       padding: 0 0.8rem;
       background-color: var(--bg-secondary);

@@ -14,9 +14,18 @@
 
 header {
   top: 0;
+  position: -webkit-sticky;
   position: sticky;
   height: 4rem;
   z-index: 10;
+}
+
+.inTheBegining {
+  width: 55%;
+}
+
+.iTB {
+  width: 75%;
 }
 
 body {
@@ -129,13 +138,13 @@ section {
   #content {
     display: block;
   }
+
   #UI,
-  #UX,
-  #Optimisation {
+#UX,
+#Optimisation {
     display: none;
   }
 }
-
 /*medium screens*/
 @media only screen and (min-width: 1114px) {
   .nav-link svg {
@@ -143,6 +152,7 @@ section {
     min-width: 1em;
     margin: 0 1em;
   }
+
   .link-text {
     display: inline-block;
     margin-right: 0.5rem;
@@ -150,31 +160,35 @@ section {
     opacity: 0;
     transition: opacity var(--transition-speed)200ms, visibility var(--transition-speed)200ms;
   }
+
   .navbar:hover .link-text {
     display: inline;
     opacity: 1;
     visibility: visible;
   }
+
   .navbar:hover::after .link-text {
-    content: '';
+    content: "";
     opacity: 0;
     visibility: hidden;
     color: #1a1a1a;
   }
+
   .nav-item:last-child {
     margin: 0;
   }
 }
-
 /*large screens*/
 @media only screen and (min-width: 1312px) {
   .logo svg {
     transform: rotate(0deg);
     transition: var(--transition-speed);
   }
+
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
+
   .logo {
     display: block;
     font-weight: bold;
@@ -187,6 +201,7 @@ section {
     width: 100%;
     margin: 0 0;
   }
+
   .logo-text {
     display: inline;
     position: absolute;
@@ -194,36 +209,45 @@ section {
     transition: var(--transition-speed);
     opacity: 1;
   }
+
   .logo-text::first-letter {
     color: var(--fa-secondary);
   }
+
   .second-letter {
     color: var(--fa-primary);
   }
+
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
     opacity: 1;
   }
+
   .navbar:hover .logo svg {
     margin-left: 12rem;
     opacity: 1;
   }
+
   .navbar:hover .logo-text {
     left: 0px;
     opacity: 1;
   }
+
   .navbar {
     top: 0;
     min-width: 100vw;
   }
+
   .navbar-nav {
     flex-direction: row;
     margin: 0 4rem;
     overflow: hidden;
   }
+
   .nav-item:last-child {
     margin-left: 0rem;
   }
+
   .nav-link {
     justify-content: center;
     margin: 0.1 0;
@@ -231,13 +255,13 @@ section {
   .nav-link .icon {
     display: none;
   }
+
   .link-text {
     opacity: 1;
     visibility: visible;
     margin-left: 0.2rem;
   }
 }
-
 .body {
   background: var(--bg-secondary);
   background-color: var(--bg-primary);
@@ -263,15 +287,15 @@ section {
   bottom: 0;
   box-shadow: 0 .5rem 3rem -.25em rgba(0, 0, 0, .3);
   opacity: 1;
-  
-  
-  
+
+
+
 }*/
 .inTheBegining {
   display: block;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 72%;
+  width: 80%;
   margin: 0 auto;
   background-color: var(--bg-ternary);
   box-shadow: 0 0.5rem 3rem -0.25em rgba(0, 0, 0, 0.8);
@@ -280,14 +304,14 @@ section {
 .iTB {
   display: grid;
   width: 80%;
-  margin: 2rem auto;
+  font-size: clamp(1.2rem, 1.5vw, 3rem);
+  margin: 0 auto;
   padding: 0.8rem;
   border-radius: 3px;
   background-color: var(--bg-secondary);
 }
-
 .iTB .hMenu {
-  justify-self: right;
+  justify-self: left;
   padding-right: 3rem;
 }
 
@@ -296,11 +320,11 @@ section {
   .inTheBegining {
     width: 85%;
   }
+
   .iTB {
-    width: 90%;
+    width: 75%;
   }
 }
-
 /*Top section mobile----------------------------------------------------------------Top section mobile*/
 .top-section {
   padding-top: 2rem;
@@ -330,6 +354,7 @@ section {
   background-color: var(--bg-secondary);
   padding: 0.5rem;
   border-radius: 3px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
 }
 
 .image {
@@ -352,7 +377,7 @@ section {
 .video::after {
   padding-top: 56.25%;
   display: block;
-  content: '';
+  content: "";
   width: 300%;
   left: -100%;
 }
@@ -375,6 +400,7 @@ section {
   background-color: var(--bg-secondary);
   padding: 0.5rem;
   border-radius: 3px;
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
 }
 
 /*top section medium screens*/
@@ -383,17 +409,17 @@ section {
     width: 72%;
   }
 }
-
 /*top section large screens*/
 @media only screen and (min-width: 1250px) {
   .top-section {
     display: grid;
     grid-template-columns: 45% 45%;
     width: 85%;
-    grid-template-areas: 'art video';
+    grid-template-areas: "art video";
     gap: 10%;
     justify-content: space-around;
   }
+
   .art {
     margin: 0;
     display: block;
@@ -403,6 +429,7 @@ section {
     padding-left: 0;
     margin: 0 auto;
   }
+
   .vid-section {
     margin: 0;
     padding-top: 3em;
@@ -412,7 +439,6 @@ section {
     margin: 0 auto;
   }
 }
-
 /*mid section mobile*/
 .middle {
   padding-top: 2rem;
@@ -420,7 +446,6 @@ section {
   width: 74%;
   margin-bottom: 4em;
 }
-
 .middle #card1, .middle #card2, .middle #card3 {
   display: block;
   margin-top: -6rem;
@@ -430,7 +455,6 @@ section {
   top: 0;
   padding-bottom: 1rem;
 }
-
 .middle .article {
   display: block;
   margin-top: 3rem;
@@ -440,7 +464,6 @@ section {
   background-color: var(--bg-ternary);
   padding-top: 4rem;
 }
-
 .middle .article .innercard {
   display: block;
   height: 14rem;
@@ -448,7 +471,7 @@ section {
   width: 73%;
   margin-bottom: 5rem;
   margin-top: 1rem;
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1.3vw, 2rem);
   text-align: center;
   padding: 0 0.8rem;
   background-color: var(--bg-secondary);
@@ -456,17 +479,14 @@ section {
   border-radius: 3px;
   z-index: 0;
 }
-
 .middle .article .innercard .h2 {
   z-index: -1;
   margin: 0;
 }
-
 .middle .article .innercard p {
   grid-area: p;
   word-spacing: 8px;
 }
-
 .middle .article .middle-img {
   display: block;
   margin: 0 auto;
@@ -480,17 +500,18 @@ section {
   .middle {
     width: 90%;
   }
+
   .article {
     width: 80%;
     margin: 0 auto;
     margin-top: 5rem;
     padding-bottom: 4rem;
   }
+
   .innercard {
     margin-bottom: 1rem;
   }
 }
-
 /*large screens*/
 @media only screen and (min-width: 1250px) {
   .middle {
@@ -513,7 +534,6 @@ section {
     margin-bottom: 3em;
   }
 }
-
 /*contact section mobile*/
 .bottom {
   display: block;
@@ -564,10 +584,19 @@ textarea {
   box-shadow: none;
   resize: none;
 }
-
 .input:focus,
 textarea:focus {
   outline: none;
+}
+
+::-moz-placeholder {
+  text-align: center;
+  font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 ::placeholder {
@@ -583,25 +612,21 @@ textarea:focus {
   justify-content: space-between;
   flex-direction: column;
 }
-
 .feedback-header {
   text-align: center;
   padding: 8px;
   font-size: 14px;
   font-weight: 700;
 }
-
 .feedback-body {
   display: flex;
   flex-direction: column;
 }
-
 .feedback-body__message {
   height: auto;
   margin-top: 0.5em;
   padding-bottom: 35%;
 }
-
 .feedback-body__email {
   background-color: var(--bg-primary);
   border: 1px solid black;
@@ -609,6 +634,20 @@ textarea:focus {
   border-right: 1px solid white;
   border-radius: 4px;
   min-height: 2.5rem;
+}
+
+::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--fa-secondary);
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--fa-secondary);
+  opacity: 1;
+  /* Firefox */
 }
 
 ::placeholder {
@@ -666,6 +705,7 @@ textarea:focus {
     margin: 10rem auto;
     width: 85%;
   }
+
   .contact-form {
     margin: 0;
     display: grid;
@@ -687,18 +727,15 @@ textarea:focus {
     box-sizing: border-box;
   }
 }
-
 /*footer section        -----------------------------------------------            footer section */
 .footer-section {
   /* transition: transform 1s ease;*/
   width: 72%;
   margin: 0 auto;
 }
-
 .footer-section .footer .footer-text {
   display: none;
 }
-
 .footer-section .footer ul {
   padding-right: 2em;
   height: 4rem;
@@ -710,7 +747,6 @@ textarea:focus {
   justify-content: center;
   list-style: none;
 }
-
 .footer-section .footer svg {
   padding-top: 1rem;
   margin: 0.2rem 0.5rem;
@@ -726,7 +762,6 @@ textarea:focus {
     display: block;
   }
 }
-
 .dark {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
@@ -769,5 +804,4 @@ textarea:focus {
 
 .solar #solarIcon {
   display: block;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
